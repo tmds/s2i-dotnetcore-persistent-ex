@@ -11,4 +11,12 @@ namespace RazorPagesContacts.Data
 
         public DbSet<Customer> Customers { get; set; }
     }
+
+    public class MssqlDbContext : AppDbContext
+    {
+        public MssqlDbContext(DbContextOptions options)
+            : base(options)
+        {
+        }
+    }
 }
